@@ -176,7 +176,7 @@ export default {
         const id = `gift_${msgJson.u}_${msgJson.g}_${i}_${elmId}`
         const giftImgElement = document.createElement('img')
         giftImgElement.src = imgSrc
-        giftImgElement.style.width = '70px'
+        giftImgElement.style.width = '140px'
         giftImgElement.setAttribute('id', id)
         giftImgElement.style.position = 'absolute'
         giftImgElement.style.top = '-100px'
