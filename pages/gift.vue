@@ -162,7 +162,7 @@ export default {
           msgJson.g === 1504 ||
           msgJson.g === 1505
         ) {
-          return require(`@/assets/img/gummies${Math.floor(this.getRandomNum(0, 2))}.png`)
+          return require(`@/assets/img/gift/gift${Math.floor(this.getRandomNum(0, 2))}.png`)
         } else {
           return this.giftList.normal.find(item => item.gift_id === msgJson.g).image
         }
