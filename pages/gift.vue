@@ -124,10 +124,10 @@ export default {
     messageCheck(socket, message, ping) {
       const msgJson = JSON.parse(message.split(`MSG\t${this.status.broadcast_key}`)[1])
       switch (msgJson.t) {
-        case '1':
+        case 1:
           // console.log('コメント')
           break
-        case '2':
+        case 2:
           this.fallGift(msgJson, this.giftUrlCheck(msgJson))
           break
         case 101:
