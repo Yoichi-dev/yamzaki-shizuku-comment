@@ -181,7 +181,7 @@ export default {
     },
     messageCheck(socket, message, ping) {
       const msgJson = JSON.parse(message.split(`MSG\t${this.status.broadcast_key}`)[1])
-      switch (msgJson.t) {
+      switch (Number(msgJson.t)) {
         case 1:
           this.getComment(msgJson)
           break
